@@ -14,7 +14,16 @@
    your-file-640.webp and your-file-1280.webp, then add:  widths: [640, 1280]
    The site then picks the right size automatically.
    ============================================================ */
-const images = [
+/* ============================================================
+   YOUR PHOTOS — shown in this exact order (first = hero photo).
+
+   HOW TO ADD A PHOTO
+   1. Copy the image into the "images" folder (WebP or JPG).
+   2. Add a new line inside the array below.
+   3. Save and upload to GitHub.
+   ============================================================ */
+
+const photos = [
   "images/FB_IMG_1791345606267.jpg",
   "images/FB_IMG_1791345608796.jpg",
   "images/FB_IMG_1791345612348.jpg",
@@ -106,5 +115,4 @@ const images = [
   "images/FB_IMG_1791346223841.jpg",
   "images/FB_IMG_1791346226547.jpg",
   "images/FB_IMG_1791346227704.jpg"
-];
-
+].map(src => ({ src, title: "Untitled", date: "" }));
