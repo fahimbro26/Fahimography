@@ -3,7 +3,7 @@
   var grid = $("#grid"), moreBtn = $("#more");
   
   // সব ছবি একসাথে দেখানোর জন্য
-  var BATCH = 9999, shown = 0;
+  var BATCH = 9999, shown = 1;
 
   // Layout rhythm (চাইলে পরে পরিবর্তন করতে পারবেন)
   var slots = ["16/9", "4/5", "4/5", "3/2", "1/1"];
