@@ -19,10 +19,9 @@ img{display:block;max-width:100%}a{color:inherit}ul{list-style:none;margin:0;pad
 h1{font:400 clamp(3rem,11vw,8.5rem)/.95 var(--serif);letter-spacing:-.025em;margin:0}
 .sub{margin:clamp(20px,3vw,36px) 0 0;font-size:1.05rem}.intro{margin:6px 0 0;color:var(--mute);max-width:34ch}
 .explore{display:inline-block;margin-top:28px;color:var(--mute);text-decoration:none;border-bottom:1px solid var(--line);padding:6px 0;transition:color .2s,border-color .2s}.explore:hover{color:var(--fg);border-color:var(--fg)}
-.hero-img{margin:clamp(40px,6vw,80px) auto 0}
-.hero-img .frame{aspect-ratio:3/2;max-height:80vh;width:100%}
+.hero-img .frame{max-height:80vh;width:100%}
 .frame{background:var(--ph);overflow:hidden;position:relative}
-.frame img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s}.frame img.on{opacity:1}
+.frame img{width:100%;height:auto;display:block;opacity:0;transition:opacity .6s}.frame img.on{opacity:1}
 .work{padding-top:clamp(56px,8vw,110px)}
 .grid{display:grid;grid-template-columns:1fr;gap:clamp(36px,5vw,64px) clamp(14px,2vw,28px);align-items:end}
 figure{margin:0}
