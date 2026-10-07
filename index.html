@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fahimography — Photography by Abdullah Al Fahim</title>
+<meta name="description" content="Fahimography — a minimalist photography portfolio by Abdullah Al Fahim, showcasing photographs, moments and visual perspectives.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fahimography — Photography by Abdullah Al Fahim">
+<meta property="og:description" content="A minimalist photography portfolio by Abdullah Al Fahim.">
+<meta property="og:image" content="./images/photo-001.webp">
+<meta name="theme-color" content="#f3f2ee">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./css/style.css">
+<script>try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme="light"}</script>
+</head>
+<body>
+<a class="skip" href="#work">Skip to photographs</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="#top" data-config="brandName">Fahimography</a>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <button id="theme" class="icon-btn" type="button" aria-label="Switch to night mode">
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.500 4 8 8 0 1 0 20 14.500z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></svg>
+      </button>
+      <button id="burger" class="icon-btn burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="l1" d="M4 8h16"/><path class="l2" d="M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1 data-config="brandName">Fahimography</h1>
+      <p class="sub" data-config="subtitle">Photography by Abdullah Al Fahim</p>
+      <p class="intro" data-config="intro">Capturing moments, places and perspectives through photography.</p>
+      <a class="explore" href="#work">Explore Work ↓</a>
+    </div>
+    <figure class="hero-img wrap" id="hero-figure"></figure>
+  </section>
+
+  <section id="work" class="work wrap" aria-label="Photographs">
+    <div id="grid" class="grid"></div>
+    <div class="more"><button id="more" class="text-btn" type="button" hidden>Load more</button></div>
+  </section>
+
+  <section id="about" class="about wrap">
+    <h2>About</h2>
+    <div class="about-body">
+      <p class="name" data-config="photographer">Abdullah Al Fahim</p>
+      <div id="about-text"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact wrap">
+    <h2>Contact</h2>
+    <ul class="social" data-social></ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div><p class="f-brand" data-config="brandName">Fahimography</p><p class="f-sub" data-config="subtitle">Photography by Abdullah Al Fahim</p></div>
+    <ul class="social small" data-social></ul>
+    <p class="copy">© <span id="year">2026</span> <span data-config="brandName">Fahimography</span></p>
+  </div>
+</footer>
+
+<div id="viewer" class="viewer" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="v-btn v-close" type="button" aria-label="Close viewer">×</button>
+  <button class="v-btn v-prev" type="button" aria-label="Previous photo">‹</button>
+  <button class="v-btn v-next" type="button" aria-label="Next photo">›</button>
+  <img class="v-img" alt="">
+  <p class="v-cap"><span class="v-title"></span><span class="v-date"></span></p>
+</div>
+
+<script src="./js/site-config.js"></script>
+<script src="./js/photos.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/gallery.js"></script>
+</body>
+</html>
